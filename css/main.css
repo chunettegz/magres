@@ -1,0 +1,359 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+    box-sizing:border-box
+}
+
+/*Menu Mobile*/
+@media (max-width: 700px){
+    #burger-menu-button{
+        background: transparent;
+        border: 0;
+        outline: 0;
+        color: black;
+        font-size: 26px;
+        z-index: 2;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgb(250, 231, 148);
+    }
+
+}
+
+
+
+/*Desktop*/
+@media(min-width: 700px){
+    body::-webkit-scrollbar {
+        width: 7px;
+    }
+      
+    body::-webkit-scrollbar-thumb:hover {
+        background-color: #dbb460;
+    }
+      
+    body::-webkit-scrollbar-thumb {
+        background: #dbb460;
+        border-radius: 5px;
+    }
+
+    /*Header*/
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+        width: 100%;
+        height: 38%;
+        font-family: 'Handlee', cursive;
+        font-size: 1.4vw;
+        letter-spacing: 0.2vh;
+        background-color: #fff6e34b;
+    }
+    
+    #burger-menu-button{
+        display: none;
+    }
+
+    .menu{
+        width: 90%;
+        display: block;
+    }
+
+    #main-menu{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color:rgb(150, 60, 168);
+        transition: color 0.5s ease-in-out;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .logo{
+        max-width: 120px;
+        height: 120px;
+        margin-top: 1.5vw;
+    }
+
+    .img-logo{
+        width: 100%;
+        
+    }
+
+    .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        width: 90%;
+        margin: auto;
+        font-family: 'Comfortaa', cursive;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+        /*Slide*/
+        .slideshow-container {
+            max-width: 80%;
+            position: relative;
+            margin-top: 8%;
+            margin-left: 10%;
+            margin-right: 10%;
+      }
+      
+     
+        /* Next & previous botones */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+      }
+      
+      /* Posición de botón next */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+      
+        .prev:hover, .next:hover {
+            background-color: rgba(235, 197, 92, 0.8);
+        }
+      
+      /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+      
+      /* Texto numero (1/2 ) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+            font-family: 'Comfortaa', cursive;
+        }
+      
+      /* Indicadores dots */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition:  0.6s ease;
+        }
+      
+            .dot:hover {
+            background-color: #717171;
+        }
+      
+      /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+      
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+    
+        .menu-item :hover{
+            border-top:1px solid #651b74;
+            border-bottom:1px solid #651b74;
+            transition: color 0.5s ease-in-out;
+            color:#dbb460;
+        }
+
+    
+        div .info-emoji{
+            display: block;
+            float: left;
+            margin: 5%;
+            border-right:rgb(89, 22, 102) 10px;
+        }
+
+    /*Footer*/
+    .infoFooter{
+        background: rgb(250, 231, 148);
+        bottom: 0;
+        width: 100%;
+        height: 40%;
+        position: relative;
+        font-family: 'Comfortaa', cursive;
+        color:rgb(89, 22, 102);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .infoFooter{
+        padding: 3%;
+    }
+
+    .infoFooter ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 1vw;
+    }
+
+    .categoria-container ul{
+        font-size: 1vw;
+    }
+
+    .newsletter{
+        height: 1.5vw;
+    }
+
+    .redes li,
+    .contact-footer li,
+    .categorias li{
+        font-size: 0.8vw;
+    }
+    /*ponerle color al mailto*/
+    
+     /*Página de About*/
+    .about-magres{
+        margin: 20%;
+        color: rgb(89, 22, 102);
+        font-family: 'Comfortaa', cursive;
+        text-align: center;
+    }
+
+    .about-magres p{
+        padding: 3%;
+    }
+
+
+
+    /*Página de Contacto*/
+    form,
+    .form,
+    .info-contacto,
+    label,
+    #title-contact{
+        font-family: 'Comfortaa', cursive;
+        color: rgb(89, 22, 102);
+    }
+   
+    .contact{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       margin-top: 8%;
+       margin-bottom: 8%;
+    }
+
+    
+    #mapa-contacto{
+        margin: 5%;
+
+    }
+    .info-contacto{
+        width: 35%;
+        display: block;
+        margin:auto;
+        font-size: 0.9vw;
+    }
+
+    .info-contacto p{
+        margin-top: 3%;
+        text-align: justify;
+    }
+
+    #title-contact,
+    .form{
+        margin-bottom: 2%;
+    }
+
+    form{
+        width: 50%;
+        height: 85%;
+    }
+      
+      form input[type="text"],
+      form input[type="telefono"],
+      form input[type="email"]{
+        font-family: 'Comfortaa', cursive;
+        width: 50vh;
+        height: 4vh;
+        border:1px solid rgb(225, 181, 238); 
+        border-radius:3px;
+        background-color:#fffcf4;
+        display: block;
+      }
+      
+      textarea{
+        font-family: 'Comfortaa', cursive;
+        margin-top: 1%;
+        width:49%;
+        height:34%;
+        border:1px solid rgb(225, 181, 238);
+        border-radius:3px;
+        background-color:#fffcf4;
+        display:block;
+      }
+      
+      form input[type="submit"]{
+        width:20%;
+        padding:10px 20px;
+        border:3px solid rgb(9, 27, 13);
+        border-radius:5px;
+        display: relative;
+        color:rgb(253, 228, 207);
+        background-color:rgb(9, 27, 13);
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 12%;
+      } 
+      
+      form input[type="submit"]:hover{
+        cursor:pointer;
+      }
+
+      h3{
+        font-family: 'Handlee', cursive;
+        font-size: 1.3vw;
+      }
+
+}
