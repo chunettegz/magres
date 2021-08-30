@@ -26,7 +26,8 @@
         </a>
 
         <button id="burger-menu-button">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" id="open-mobile-menu"></i>
+            <i class="fas fa-times" id="close-mobile-menu"></i>
         </button>
 
         <nav class="menu">
@@ -63,38 +64,36 @@
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
         </div>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-        </div>
-
-        <br>
-
+  
         <!--Contenedores info-->
-        <div class="info">
-            <div class="info-emoji">
+        <article class="info">
+            <section class="info-emoji">
                 <p>
                     &#128181; 10% OFF con tu compra en Efectivo o Transferencia
                 </p>
-            </div>
+            </section>
 
-            <div class="info-emoji">
+            <section class="info-emoji">
                 <p>
                     &#128179; 3 cuotas sin interés con Mercado Pago
                 </p>
-            </div>
-        </div>
+            </section>
+        </article>
 
 
     </main>
 
     <!--Footer-->
     <footer class="footer">
-        <div class="infoFooter">
-            <div class="categoria-container">
+        <article class="infoFooter">
+            <section class="categoria-container">
                 <h3>Categorías</h3>
                 <ul class="categorias">
                     <li class="menu-item">
@@ -110,19 +109,18 @@
                         <a href="contacto.html"> Contacto </a>
                     </li>
                 </ul>
-            </div>
+            </section>
 
-
-            <div class="categoria-container">
+            <section class="categoria-container">
                 <h3>Contactanos</h3>
                 <ul class="contact-footer">
-                    <li>
+                    <li class="item-link">
                         <a href="https://walink.co/6221ba" target="_blank">
                             <i class="fab fa-whatsapp"></i>
                         Whatsapp
                         </a>
                     </li>
-                    <li>
+                    <li class="item-link">
                         <i class="fas fa-envelope-open-text"></i>
                         <a href="mailto:magresvirtual@gmail.com">magresvirtual@gmail.com</a>
                     </li>
@@ -131,32 +129,32 @@
                         Retiros en Almagro
                     </li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="categoria-container">
+            <section class="categoria-container">
                 <h3>Redes sociales</h3>
                 <ul class="redes">
-                    <li>
+                    <li class="item-link">
                         <a href="https://www.instagram.com/magrestienda/" target="_blank"> Instagram
                             <i class="fab fa-instagram"></i>
                         </a>
-                    </li>
-                    <li>
+                    </li class="item-link">
+                    <li class="item-link">
                         <a href="https://www.facebook.com/Magres-Tienda-102146218659877" target="_blank"> Facebook
                             <i class="fab fa-facebook"></i>
                         </a>
                     </li>
                 </ul>
-            </div>
+            </section>
 
-            <diV class="categoria-container">
+            <section class="categoria-container">
                 <h3>Newsletter</h3>
                 <input type="text" class="newsletter" name="email" placeholder="Escribe tu email.." required></input>
                 <a href="#news">
                     <i class="fas fa-location-arrow"></i>
                 </a>
-            </diV>
-        </div>
+            </section>
+        </article>
     </footer>
 
     <script src="js/main.js"></script>

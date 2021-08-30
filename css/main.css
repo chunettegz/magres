@@ -8,33 +8,6 @@
     box-sizing:border-box
 }
 
-/*Menu Mobile*/
-@media (max-width: 700px){
-    #burger-menu-button{
-        background: transparent;
-        border: 0;
-        outline: 0;
-        color: black;
-        font-size: 26px;
-        z-index: 2;
-    }
-
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background: rgb(250, 231, 148);
-    }
-
-}
-
-
-
-/*Desktop*/
-@media(min-width: 700px){
     body::-webkit-scrollbar {
         width: 7px;
     }
@@ -56,7 +29,6 @@
         align-items: center;
         top: 0;
         width: 100%;
-        height: 38%;
         font-family: 'Handlee', cursive;
         font-size: 1.4vw;
         font-weight: bold;
@@ -78,7 +50,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        color:rgb(89, 22, 102);
+        color:rgb(132, 51, 148);
         transition: color 0.5s ease-in-out;
         margin-top: 2%;
         margin-bottom: 2%;
@@ -101,19 +73,18 @@
         justify-content: space-around;
 
         width: 90%;
-        margin: auto;
+        padding: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
         font-family: 'Comfortaa', cursive;
-        margin-left: 20px;
-        margin-bottom: 30px;
     }
 
         /*Slide*/
         .slideshow-container {
             max-width: 80%;
+            height: 80%;
             position: relative;
-            margin-top: 8%;
-            margin-left: 10%;
-            margin-right: 10%;
+            margin: 8%;
       }
       
      
@@ -205,6 +176,11 @@
             color:#dbb460;
         }
 
+        .menu-item :link,
+        .item-link :link{
+            color:rgb(129, 13, 104);
+        }
+
     
         div .info-emoji{
             display: block;
@@ -216,19 +192,15 @@
     /*Footer*/
     .infoFooter{
         background: rgb(250, 231, 148);
-        bottom: 0;
         width: 100%;
-        height: 40%;
-        position: relative;
+        height: 20%;
+        position: absolute;
         font-family: 'Comfortaa', cursive;
         color:rgb(89, 22, 102);
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-    }
-
-    .infoFooter{
-        padding: 3%;
+        padding: 2%;
     }
 
     .infoFooter ul{
@@ -244,6 +216,8 @@
 
     .newsletter{
         height: 1.5vw;
+        border-radius: 3px;
+        font-family: 'Comfortaa', cursive;
     }
 
     .redes li,
@@ -255,14 +229,21 @@
     
      /*Página de About*/
     .about-magres{
-        margin: 20%;
+        margin-top: 9vw;
+        margin-bottom: 30vw;
         color: rgb(89, 22, 102);
         font-family: 'Comfortaa', cursive;
         text-align: center;
     }
 
     .about-magres p{
-        padding: 3%;
+        padding: 4.5vw;
+        font-size: 1.5vw;
+    }
+
+    #p1{
+        font-size: 3vw;
+        font-weight: bold;
     }
 
 
@@ -369,4 +350,190 @@
         font-size: 1.3vw;
       }
 
+/*Menu Mobile*/
+@media (max-width: 700px){
+    #burger-menu-button{
+        background: transparent;
+        border: 0;
+        outline: 0;
+        color: rgb(93, 5, 110);
+        font-size: 10px;
+        cursor: pointer;
+        display: block;
+    }
+
+
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .mobile-menu-active .menu{
+        display: block;
+    }
+
+    .mobile-menu-active #main-menu{
+        font-size: 3.6vw;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        padding-left: 5%;
+        width: 30vw;
+        height: 100%;
+        z-index: 2;
+        background-color:rgba(250, 231, 148, 0.829);
+    }
+
+    #open-mobile-menu{
+        font-size: 4vw;
+        color:rgba(228, 189, 80, 0.897);
+        position: absolute;
+        z-index: 1;
+        left: 30px;
+        top: 50px;
+
+    }
+
+    #close-mobile-menu{
+        display: none;
+    }
+
+    .mobile-menu-active{
+        overflow: hidden;
+    }
+
+    .logo{
+        max-width: 75px;
+        height: 75px;
+        margin-top: 1.5vw;
+        margin-bottom: 1.5vw;
+        display: inline-block;
+    }
+
+    .dot{
+        height: 6.5px;
+        width: 6.5px;
+    }
+
+    .info{
+        font-size: 2.1vw;
+        text-align: center;
+    }
+
+    .info-contacto{
+        margin-bottom: 10%;
+        width: 70%;
+    }
+    .info-contacto p{
+        font-size: 2.1vw;
+        text-align: center;
+    }
+    .contact{
+        display: block;
+    }
+
+    #title-contact{
+        text-align: center;
+        font-size: 4.5vw;
+    }
+
+    .categoria-container li{
+        font-size: 2.8vw;
+    }
+
+    .categoria-container h3{
+        font-size: 3.7vw;
+    }
+
+    .categoria-container{
+        width: 50%;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        font-size: 3vw;
+        padding: 8vw;
+        margin: 5vw;
+    }
+
+    .info-emoji{
+        padding: 5%;
+    }
+
+    .newsletter{
+        width: 110px;
+        height: 38%;
+        font-size: 2vw;
+    }
+
+    .infoFooter{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        bottom: 0;
+    }
+
+    /*about mobile*/
+    .about-magres{
+        margin-top: 10vw;
+        margin-bottom: 30vw;
+        color: rgb(89, 22, 102);
+        font-family: 'Comfortaa', cursive;
+        text-align: center;
+    }
+
+    .about-magres p{
+        padding: 10vw;
+        font-size: 3vw;
+    }
+
+    #p1{
+        font-size: 4vw;
+        font-weight: bold;
+    }
+
+  
+
+    /*contact mobile*/
+    form{
+        width: 80%;
+        margin: auto;
+    }
+    
+    .form{
+        text-align: center;
+        margin-top: 1.5%;
+        font-size: 3vw;
+        padding: 2%;
+        margin-top: 4%;
+    }
+
+    #mapa-contacto{
+        display: block;
+        width: 200px;
+        height: 150px;
+    }
+
+    form input[type="text"],
+    form input[type="telefono"],
+    form input[type="email"]{
+        width: 65vw;
+        height: 7vw;
+        border:1px solid rgb(225, 181, 238); 
+        border-radius:3px;
+    }
+
 }
+

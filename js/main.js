@@ -1,3 +1,13 @@
+//MENU HAMBURGUESA
+document.addEventListener( "DOMContentLoaded", function() {
+  
+  const burgerMenuBtn = document.querySelector( '#burger-menu-button' );
+  
+  burgerMenuBtn.addEventListener( 'click', function() {
+    document.body.classList.toggle('mobile-menu-active');
+  } );
+});
+
 
 //SLIDE
   var slideIndex = 1;
@@ -29,4 +39,4 @@
     dots[slideIndex-1].className += " active";
   }
 
-//MENÚ HAMBURGUESA
+
