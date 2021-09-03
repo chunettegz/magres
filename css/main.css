@@ -31,9 +31,8 @@
         width: 100%;
         font-family: 'Handlee', cursive;
         font-size: 1.4vw;
-        font-weight: bold;
         letter-spacing: 0.2vh;
-        background-color: #fff6e34b;
+        background: linear-gradient(#a1710973,#f1daaa3f ,#fff7e53a);
     }
     
     #burger-menu-button{
@@ -49,7 +48,7 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         color:rgb(132, 51, 148);
         transition: color 0.5s ease-in-out;
         margin-top: 2%;
@@ -71,12 +70,11 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-
-        width: 90%;
-        padding: 5%;
-        margin-left: 3%;
-        margin-right: 3%;
+        margin: 8%;
+        padding: 3%;
         font-family: 'Comfortaa', cursive;
+        text-align: center;
+
     }
 
         /*Slide*/
@@ -84,7 +82,7 @@
             max-width: 80%;
             height: 80%;
             position: relative;
-            margin: 8%;
+            margin: 11%;
       }
       
      
@@ -181,6 +179,10 @@
             color:rgb(129, 13, 104);
         }
 
+        a[href^="mailto:"]{
+            color:#651b74;
+        }
+
     
         div .info-emoji{
             display: block;
@@ -193,7 +195,6 @@
     .infoFooter{
         background: rgb(250, 231, 148);
         width: 100%;
-        height: 20%;
         position: absolute;
         font-family: 'Comfortaa', cursive;
         color:rgb(89, 22, 102);
@@ -210,9 +211,6 @@
         font-size: 1vw;
     }
 
-    .categoria-container ul{
-        font-size: 1vw;
-    }
 
     .newsletter{
         height: 1.5vw;
@@ -248,17 +246,73 @@
 
 
     /*Página de Productos*/
-   
     .product-container{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        margin: 4%;
     }
 
-    .foto-prod{
-        width: 380px;
-        height: 500px;
+    .cont-prod-foto h3{
+        font-size: 2vw;
+        color:#651b74;
+        text-align: center;
     }
+
+    .cont-prod-foto{
+        margin: 2%;
+    }
+
+
+    .foto-prod{
+        width: 300px;
+        height: 300px;
+        z-index: 3;
+        position: relative;
+        left: 120px;
+        border-radius: 2%;
+        scroll-behavior: smooth;
+        cursor: pointer;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 0.5s;
+        opacity: 0.9;
+    }
+
+    #zoom{
+        transition: 1.5s ease;
+        -webkit-transition: 1.5s ease;
+    }
+
+    #zoom:hover{
+        transform : scale(1.5);
+		-webkit-transform : scale(1.5);
+    }
+
+    .foto-prod-tried{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        border-radius: 2%;
+        scroll-behavior: smooth;
+        cursor: pointer;
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.8s;
+        
+    }
+
+    .product-container p{
+        font-family: 'Comfortaa', cursive;
+        color:#651b74;
+        text-align: center;
+    }
+
+    
 
     /*Página de Contacto*/
     form,
@@ -268,6 +322,10 @@
     #title-contact{
         font-family: 'Comfortaa', cursive;
         color: rgb(89, 22, 102);
+    }
+
+    form label{
+        display: block;
     }
    
     .contact{
@@ -280,7 +338,6 @@
 
     
     #mapa-contacto{
-        margin: 5%;
 
     }
     .info-contacto{
@@ -363,7 +420,6 @@
     }
 
 
-
     header{
         display: flex;
         flex-direction: column;
@@ -381,9 +437,10 @@
 
     .mobile-menu-active #main-menu{
         font-size: 3.6vw;
+        font-weight: bold;
         display: flex;
         flex-direction: column;
-        justify-content:space-around;
+        justify-content:space-evenly;
         position: absolute;
         top: 0;
         left: 0;
@@ -392,7 +449,7 @@
         width: 30vw;
         height: 100%;
         z-index: 2;
-        background-color:rgba(250, 231, 148, 0.829);
+        background-color:rgba(250, 231, 148, 0.856);
     }
 
     #open-mobile-menu{
@@ -405,16 +462,30 @@
 
     }
 
-    #close-mobile-menu{
-        display: none;
-    }
-
     .mobile-menu-active{
         overflow: hidden;
     }
 
-    .logo{
-        max-width: 75px;
+
+    .mobile-menu-active #close-mobile-menu{
+        display: block;
+        font-size: 4vw;
+        color:#651b74;
+        position: absolute;
+        z-index: 3;
+        left: 30px;
+        top: 50px;
+    }
+    
+    #close-mobile-menu{
+        display: none;
+    }
+
+
+
+
+    .img-logo{
+        width: 75px;
         height: 75px;
         margin-top: 1.5vw;
         margin-bottom: 1.5vw;
@@ -436,7 +507,7 @@
         width: 70%;
     }
     .info-contacto p{
-        font-size: 2.1vw;
+        font-size: 3.5vw;
         text-align: center;
     }
     .contact{
@@ -449,7 +520,7 @@
     }
 
     .categoria-container li{
-        font-size: 2.8vw;
+        font-size: 2vw;
     }
 
     .categoria-container h3{
@@ -463,13 +534,15 @@
     .info{
         display: flex;
         flex-direction: column;
-        font-size: 3vw;
-        padding: 8vw;
-        margin: 5vw;
+        font-size: 2.5vw;
+        margin: 15%;
+        padding: 2.5%;
     }
 
     .info-emoji{
-        padding: 5%;
+        margin: 7%;
+        font-size: 4.5vw;
+        color:rgb(129, 13, 104);
     }
 
     .newsletter{
@@ -482,7 +555,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        bottom: 0;
+        padding: 4%;
+        letter-spacing: 0.5px;
     }
 
     /*about mobile*/
@@ -504,12 +578,54 @@
         font-weight: bold;
     }
 
-  
+
+    /*product mobile*/
+    .product-container{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .cont-prod-foto h3{
+        font-size: 6.5vw;
+    }
+
+    .cont-prod-foto p{
+        font-size: 3vw;
+    }
+
+    .foto-prod{
+        width: 140px;
+        height: 150px;
+        z-index: 3;
+        top: 70px;
+        right: 44px;
+    }
+
+
+    .foto-prod-tried{
+        width: 250px;
+        height: 300px;
+        border-radius: 2px;
+        border-radius: 5px;
+    }
 
     /*contact mobile*/
+    .contact{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
     form{
         width: 80%;
         margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .form{
@@ -520,10 +636,16 @@
         margin-top: 4%;
     }
 
+
+    form label{
+        display: block;
+    }
+
     #mapa-contacto{
         display: block;
         width: 200px;
-        height: 150px;
+        height: 100px;
+        margin-left: 10%;
     }
 
     form input[type="text"],
@@ -535,5 +657,31 @@
         border-radius:3px;
     }
 
+    textarea {
+        width: 85%;
+        height: 44%;
+    }
+
+    form input[type="submit"]{
+        margin: 10%;
+        width: 35%;
+    }
+
+    .info-contacto p{
+        margin-bottom: 2%;
+    }
+
+    .info-contacto a[href^="mailto:"]{
+       font-size: 3.5vw;
+    }
+
+    .info-contacto .item-link{
+        font-size: 3.5vw;
+        text-align: center;
+        margin-left: 12%;
+    }
+
+
 }
+
 
