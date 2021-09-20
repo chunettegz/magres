@@ -336,8 +336,15 @@
        margin-bottom: 8%;
     }
 
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
     
     #mapa-contacto{
+        border-radius: 7px;
 
     }
     .info-contacto{
@@ -363,7 +370,7 @@
     }
       
       form input[type="text"],
-      form input[type="telefono"],
+      form input[type="number"],
       form input[type="email"]{
         font-family: 'Comfortaa', cursive;
         width: 50vh;
@@ -372,6 +379,7 @@
         border-radius:3px;
         background-color:#fffcf4;
         display: block;
+        margin-bottom: 1.5%;
       }
       
       textarea{

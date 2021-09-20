@@ -69,26 +69,26 @@
                 </a>
 
             </section>
-            <form>
+            <form action="form.php" method="post">
                 <h2 id="title-contact">
                     Comunicate con Magre's
                 </h2>
                 <p class="form">Por consultas o información, dejanos tu mensaje</p>
                 
                 <label for="nombre">NOMBRE</label>
-                <input type="text" name="Nombre" placeholder="Escribe tu nombre..." required></input>
-                <br>
+                    <input type="text" name="Nombre" placeholder="Escribe tu nombre..." required></input>
+                
                 <label for="apellido">APELLIDO</label>
-                <input type="text" name="Apellido" placeholder="Escribe tu apellido..." required></input>
-                <br>
+                    <input type="text" name="Apellido" placeholder="Escribe tu apellido..." required></input>
+                
                 <label for="telefono">TELÉFONO</label>
-                <input type="text" name="Telefono" placeholder="Escribe tu teléfono.." required></input>
-                <br>
+                    <input type="number" name="Telefono" placeholder="Escribe tu teléfono.." required></input>
+                
                 <label for="email">E-MAIL</label>
-                <input type="text" name="Email" placeholder="ejemplo@mail.com" required></input>
-                <br>
+                    <input type="text" name="Email" placeholder="ejemplo@mail.com" required></input>
+                
                 <label for="mensaje">MENSAJE</label>
-                <textarea name="mensaje" id="mensaje" rows="4" cols="22" maxlength="3000" placeholder="Escribe tu mensaje..." required></textarea>
+                    <textarea name="mensaje" id="mensaje" rows="4" cols="22" maxlength="3000" placeholder="Escribe tu mensaje..."></textarea>
 
                 <input type="submit" value="ENVIAR">
             </form>
