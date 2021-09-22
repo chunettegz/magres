@@ -415,6 +415,15 @@
         font-size: 1.3vw;
       }
 
+      /*Página formulario - PHP*/
+
+      .form-ok{
+          margin-top: 30%;
+          margin-bottom: 30%;
+          font-family: 'Handlee', cursive;
+          color: #dbb460;
+      }
+
 /*Menu Mobile*/
 @media (max-width: 700px){
     #burger-menu-button{

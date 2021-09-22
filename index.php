@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="img/logo2.png" sizes="any">
     <link rel="stylesheet" type=text/css href="css/main.css">
 
@@ -19,7 +18,6 @@
 
     <title>Magre's Tienda</title>
 </head>
-
 
 <body>
     <header>
@@ -49,56 +47,11 @@
             </ul>
         </nav>
     </header>
-
     <main>
-        <article class="contact">
-            <section class="info-contacto">
-                <p>
-                    Podes dejarnos tu mensaje con tu consulta por Whatsapp o por nuestras redes sociales
-                </p>
-                <p>
-                    📍Retiros en Almagro
-                </p>
-                <iframe id="mapa-contacto"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26270.188417430658!2d-58.44013606171399!3d-34.60988724928617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca5e41da17ff%3A0xebce9fad2698f23f!2sAlmagro%2C%20CABA!5e0!3m2!1ses!2sar!4v1627619877521!5m2!1ses!2sar"
-                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                <p>
-                    &#128231 <a href="mailto:magresvirtual@gmail.com">magresvirtual@gmail.com</a>
-                </p>
-                <a class="item-link" href="https://walink.co/6221ba" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                    Whatsapp
-                </a>
-
-            </section>
-            <form action="form.php" method="post">
-                <h2 id="title-contact">
-                    Comunicate con Magre's
-                </h2>
-                <p class="form">Por consultas o información, dejanos tu mensaje</p>
-
-                <label for="nombre">NOMBRE</label>
-                <input type="text" name="Nombre" placeholder="Escribe tu nombre..." required></input>
-
-                <label for="apellido">APELLIDO</label>
-                <input type="text" name="Apellido" placeholder="Escribe tu apellido..." required></input>
-
-                <label for="telefono">TELÉFONO</label>
-                <input type="number" name="Telefono" placeholder="Escribe tu teléfono.." required></input>
-
-                <label for="email">E-MAIL</label>
-                <input type="text" name="Email" placeholder="ejemplo@mail.com" required></input>
-
-                <label for="mensaje">MENSAJE</label>
-                <textarea name="mensaje" id="mensaje" rows="4" cols="22" maxlength="3000"
-                    placeholder="Escribe tu mensaje..."></textarea>
-
-                <input type="submit" value="ENVIAR" name="Submit">
-            </form>
-        </article>
+        <h2 class="form-ok">¡Gracias por contactarte! En breve te responderemos</h2>
+        <!--No se cómo ponerle estilo a esto-->
     </main>
 
-    <!--Footer-->
     <footer class="footer">
         <div class="infoFooter">
             <div class="categoria-container">
@@ -168,5 +121,3 @@
 
     <script src="js/main.js"></script>
 </body>
-
-</html>
