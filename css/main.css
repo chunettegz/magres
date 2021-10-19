@@ -30,7 +30,7 @@
         top: 0;
         width: 100%;
         font-family: 'Handlee', cursive;
-        font-size: 1.4vw;
+        font-size: 22px;
         letter-spacing: 0.2vh;
         background: linear-gradient(#a1710973,#f1daaa3f ,#fff7e53a);
     }
@@ -208,7 +208,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        font-size: 1vw;
+        font-size: 22px;
     }
 
 
@@ -227,20 +227,22 @@
     
      /*Página de About*/
     .about-magres{
-        margin-top: 9vw;
-        margin-bottom: 30vw;
         color: rgb(89, 22, 102);
         font-family: 'Comfortaa', cursive;
+    }
+
+    .about-magres main{
         text-align: center;
+        margin-top: 10%;
     }
 
     .about-magres p{
         padding: 4.5vw;
-        font-size: 1.5vw;
+        font-size: 26px;
     }
 
     #p1{
-        font-size: 3vw;
+        font-size: 42px;
         font-weight: bold;
     }
 
@@ -256,7 +258,7 @@
     }
 
     .cont-prod-foto h3{
-        font-size: 2vw;
+        font-size: 28px;
         color:#651b74;
         text-align: center;
     }
@@ -351,7 +353,7 @@
         width: 35%;
         display: block;
         margin:auto;
-        font-size: 0.9vw;
+        font-size: 15px;
     }
 
     .info-contacto p{
@@ -385,7 +387,7 @@
       textarea{
         font-family: 'Comfortaa', cursive;
         margin-top: 1%;
-        width:49%;
+        width:50vh;
         height:34%;
         border:1px solid rgb(225, 181, 238);
         border-radius:3px;
@@ -414,17 +416,18 @@
         font-family: 'Handlee', cursive;
         font-size: 1.3vw;
       }
+    
+    /*Página formulario*/
+    #form-ok{
+        margin-top: 27%;
+        margin-bottom: 27%;
+        text-align: center;
+        font-size: 35px;
+        font-family: 'Handlee', cursive;
+        color: rgb(89, 22, 102);
+    }
 
-      /*Página formulario - PHP*/
-
-      .form-ok{
-          margin-top: 30%;
-          margin-bottom: 30%;
-          font-family: 'Handlee', cursive;
-          color: #dbb460;
-      }
-
-/*Menu Mobile*/
+/*MENU MOBILE*/
 @media (max-width: 700px){
     #burger-menu-button{
         background: transparent;
@@ -453,7 +456,7 @@
     }
 
     .mobile-menu-active #main-menu{
-        font-size: 3.6vw;
+        font-size: 16px;
         font-weight: bold;
         display: flex;
         flex-direction: column;
@@ -537,15 +540,18 @@
     }
 
     .categoria-container li{
-        font-size: 2vw;
+        font-size: 13px;
+        text-align: center;
     }
 
     .categoria-container h3{
-        font-size: 3.7vw;
+        font-size: 20px;
+        text-align: center;
     }
 
     .categoria-container{
-        width: 50%;
+        line-height: 20px;
+        padding: 3%;
     }
 
     .info{
@@ -559,27 +565,25 @@
     .info-emoji{
         margin: 7%;
         font-size: 4.5vw;
-        color:rgb(129, 13, 104);
+        color:rgb(93, 5, 110);
     }
 
     .newsletter{
-        width: 110px;
-        height: 38%;
-        font-size: 2vw;
+        width: 130px;
+        height: 20px;
+        font-size: 12px;
+        margin-left: 30%;
     }
 
     .infoFooter{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         padding: 4%;
         letter-spacing: 0.5px;
     }
 
     /*about mobile*/
     .about-magres{
-        margin-top: 10vw;
-        margin-bottom: 30vw;
         color: rgb(89, 22, 102);
         font-family: 'Comfortaa', cursive;
         text-align: center;
@@ -587,11 +591,11 @@
 
     .about-magres p{
         padding: 10vw;
-        font-size: 3vw;
+        font-size: 17px;
     }
 
     #p1{
-        font-size: 4vw;
+        font-size: 30px;
         font-weight: bold;
     }
 
@@ -666,7 +670,7 @@
     }
 
     form input[type="text"],
-    form input[type="telefono"],
+    form input[type="number"],
     form input[type="email"]{
         width: 65vw;
         height: 7vw;
@@ -696,6 +700,7 @@
         font-size: 3.5vw;
         text-align: center;
         margin-left: 12%;
+        color:#651b74;
     }
 
 

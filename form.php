@@ -1,8 +1,7 @@
 <?php
-include("index.php");
+include("gracias.html");
 
 error_reporting(E_ALL);
-ini_set('display_errors', 1);
 
 $Email = $_POST['Email'];
 
@@ -28,11 +27,17 @@ $connection = new mysqli('localhost', 'root', '', 'magres_form');
 if ($connection->errno !== 0) {
     die('Hubo un error en la conexión');
 }
+
 $Nombre        = trim($_POST['Nombre']);
+mysqli_real_escape_string($connection, $Nombre);
 $Apellido      = trim($_POST['Apellido']);
+mysqli_real_escape_string($connection, $Apellido);
 $Telfono       = intval($_POST['Telefono']);
+mysqli_real_escape_string($connection, $Telefono);
 $Email         = trim($_POST['Email']);
+mysqli_real_escape_string($connection, $Email);
 $mensaje       = trim($_POST['mensaje']);
+mysqli_real_escape_string($connection, $mensaje);
 $Fecha_Ingreso = date("d/m/y");
 
 
@@ -44,7 +49,7 @@ if (isset($_POST['Submit'])) {
         ! empty($_POST['mensaje'])) { 
                 $connection->query(
                     "INSERT INTO `magres_datos_form`( `NOMBRE`, `APELLIDO`, `EMAIL`, `TELEFONO`, `FECHA_INGRESO`, `MENSAJE`)
-                    VALUES('$Nombre','$Apellido','$Email','$Telefono','$Fecha_Ingreso','$mensaje');"
-                );
+                    VALUES('$Nombre','$Apellido','$Email','$Telefono','$Fecha_Ingreso','$mensaje')",
+                    );
         }
     }
