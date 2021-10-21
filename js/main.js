@@ -11,7 +11,9 @@ document.addEventListener( "DOMContentLoaded", function() {
 
 //SLIDE
 var slideIndex = 1;
-showSlides(slideIndex);
+  if (typeof slides !== 'undefined') {
+    showSlides(slideIndex);
+  }
 
   // Next/previous controles
   function plusSlides(n) {
